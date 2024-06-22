@@ -1,0 +1,203 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, select, textarea {
+    font-family: "Heebo", sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #fff;
+    height: 80px;
+}
+
+header #barranav {
+    display: flex;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header #barranav .barralink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+header #barranav .navlist {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+header #barranav .navlist .navitem a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header #barranav .navlist .navitem a:hover {
+    color: #777;
+    transition: color 0.5s;
+}
+
+header #barranav #hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.imagem {
+    width: 500px;
+    height: 500px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 740px) {
+    header #barranav .navlist {
+        display: none;
+    }
+
+    header #barranav #hamburguer {
+        display: block;
+    }
+
+    header #barranav.active .navlist {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        right: 10px; 
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    header #barranav.active .navitem {
+        margin: 10px 0;
+    }
+}
+
+/* Outros estilos */
+main {
+    margin-top: 6rem;
+}
+
+main #banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+main #banner .conteudo .h1banner {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+main #banner .conteudo .paragrafobanner {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+
+main #banner .conteudo .buttonbanner {
+    background-color: #00A8cc;
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+    border-radius: 2px;
+    padding: 8px 24px;
+    border: none;
+}
+
+main #banner .imagem {
+    border-radius: 50%;
+    width: 100%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+@media (max-width: 920px) {
+    main #banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+section#posts {
+    margin-top: 71px;
+    background-color: #d9ecf0;
+}
+
+#posts .divpost {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+#posts .divpost .posthead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#posts .divpost .posthead .titulopost {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#posts .divpost .posthead .view {
+    text-decoration: none;
+    color: #00A8cc;
+    margin-top: 10px;
+}
+
+#posts .divpost .postcard {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+#posts .divpost .postcard .card {
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+#posts .divpost .postcard h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+#posts .divpost .postcard span {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    display: block;
+}
+
+@media (max-width: 740px) {
+    #posts .divpost .postcard {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <title>Portifólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburguer');
+    const nav = document.getElementById('barranav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+});
+
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav id="barranav">
+            <a class="barralink" href="">Eduarda Keila</a>
+            <ul class="navlist">
+                <li class="navitem" > <a href="">Works</a> </li>
+                 <li class="navitem" > <a href="">Blog</a> </li>
+                  <li class="navitem" > <a href="">Contact</a> </li>
+
+            </ul>
+
+        <div id="hamburguer">
+        <svg width="30" height="20" 
+        viewBox="0 0 30 20" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg">
+
+        <path d="M0 1H30" stroke="#21243D" stroke-width="1.6"/>
+        <path d="M0 10H30" stroke="#21243D" stroke-width="1.6"/>
+        <path d="M0 19H30" stroke="#21243D" stroke-width="1.6"/>
+        </svg>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="conteudo">
+                <h1 class="h1banner">Hi, I am Eduarda, <br>Creative Technologist
+                </h1>
+
+                <p class="paragrafobanner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit, maiores consequuntur obcaecati saepe odit nostrum? Animi voluptatibus, quis ratione nulla sunt.
+                </p>
+
+                <button class="buttonbanner">Download Resume</button>
+
+            </div>
+            
+            <img class="imagem" src="fotos/WhatsApp Image 2024-04-23 at 22.40.39.jpeg " alt="Eduarda Keila">
+
+        </section>
+
+        <section id="posts">
+
+            <div class="divpost">
+
+                <div class="posthead">
+                    <h2 class="titulopost">Recent Posts</h2>
+                <a class="view" href=""> View All</a>
+                </div>
+           
+                <div class="postcard">
+
+                    <div class="card">
+                        <h3>Making a desing system from scratch</h3>
+                        <span>23 April 2024</span>
+                        <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. 
+                            Hic vero at quas eligendi assumenda aperiam quisquam iusto voluptates 
+                            voluptate nesciunt vel similique praesentium minus, pariatur perspiciatis, molestiae deleniti laboriosam. Rerum?</p>
+                    </div>
+
+                    <div class="card">
+                         <h3>Making a desing system from scratch</h3>
+                        <span>23 April 2024</span>
+                        <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. 
+                            Hic vero at quas eligendi assumenda aperiam quisquam iusto voluptates 
+                            voluptate nesciunt vel similique praesentium minus, pariatur perspiciatis, molestiae deleniti laboriosam. Rerum?</p>
+                    </div>
+
+                </div>
+            </div>
+                
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>
