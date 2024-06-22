@@ -1,3 +1,9 @@
 # Portfólio
-Modelo de Portfólio utilizando HTML, CSS e Javascript. Protótipo para usar de exemplo e adaptar de acordo com seu gosto!
+Página inicial de um Portfólio para ser usada de exemplo e adaptar-se de acordo com seu gosto!
+
+
+#Tecnologias utilizadas
+-HTML
+-CSS
+-Javascript
 
